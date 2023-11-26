@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.parallax-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.parallax-image {
+  flex: 0 0 100%;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-position: center;
+  background-size: cover;
+  will-change: transform;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-button:first-child {
+  left: 10px;
+}
+
+.nav-button:last-child {
+  right: 10px;
+}
+
+.transition-all-03s {
+  transition: all 0.3s ease;
+}
+
+.backface-visibility-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
